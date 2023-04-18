@@ -48,18 +48,18 @@ car.motor = "200kw"
 
 // basic operators
 
-/**
- * = on väärtuse andmine muutujale
- * == väärtuse on võrdsed mõlemal poolel ("32" == 32)
- * === väärtused ja andme tüübid on võrdsed 
- * + liitmine (ühekaupa liitmise operaator ++ => 1 ++)
- * - lahutamine
- * / jagamine
- * * korrutamine
- * % (remainder) jääk
- * ** astendamine
- * ! ei ole võrdne
- * !== väärtused ning andmetüübid ei ole võrdsed
+/** 
+ * = on väärtuse andmine muutujale 
+ * == väärtuse on võrdsed mõlemal poolel ("32" == 32) 
+ * === väärtused ja andme tüübid on võrdsed  
+ * + liitmine (ühekaupa liitmise operaator ++ => 1 ++) 
+ * - lahutamine 
+ * / jagamine 
+ * * korrutamine 
+ * % (remainder) jääk 
+ * ** astendamine 
+ * ! ei ole võrdne 
+ * !== väärtused ning andmetüübid ei ole võrdsed 
  */ 
 
 // Data structures - Map vs Set
@@ -85,7 +85,7 @@ const thisIsJSON = {
     "age": 234,
 }
 
-// if statements and shorthand exprele 
+// conditional statements and shorthand exprele 
 let year = prompt("kui vana sa oled?");
 if(year === 2131) {
 
@@ -99,5 +99,18 @@ else {
 
 !year === ("1756") ? alert("pihtas, põhjas") : alert("mööööööödas")
 
+// Switch Statements
 
+switch(year){
 
+    case "1756":
+        alert("pihtas, põhjas")
+        break;
+    case "1765":
+        alert("peaaegu")
+        break;
+    default:
+        alert("mööda")
+        break;
+
+}
